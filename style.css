@@ -1524,7 +1524,7 @@ body.no-scroll {
 }
 
 @media (max-width: 992px) {
-    header { position: relative; z-index: 9999 !important; animation: none !important; opacity: 1 !important; transform: none !important; }
+    header { position: fixed; z-index: 10005 !important; animation: none !important; opacity: 1 !important; transform: none !important; }
     .btn-small { display: none !important; }
     .nav-wrapper { padding: 0 !important; }
     .logo { margin-left: 0 !important; font-size: 20px !important; z-index: 10005 !important; }
