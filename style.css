@@ -1545,7 +1545,7 @@ body.no-scroll {
 
 @media (max-width: 768px) {
     header { position: fixed; z-index: 10005 !important; animation: none !important; opacity: 1 !important; transform: none !important; }
-    .hero { padding: 60px 0 !important; }
+    .hero { padding: 140px 0 60 !important; }
     .hero-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
     .hero-content h1 { font-size: 32px !important; margin: 0 auto 20px !important; text-align: center !important; white-space: normal !important; width: 100%; }
     .hero-content p { font-size: 16px !important; margin: 0 auto 30px !important; text-align: center !important; width: 100%; }
