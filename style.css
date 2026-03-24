@@ -36,11 +36,15 @@ html {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: var(--bg-color);
     padding: 24px 0;
     border-bottom: 1px solid #000000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    animation: slideDown 1s ease-out 2s forwards;
-    opacity: 0;
 }
 
 .nav-wrapper {
@@ -208,8 +212,6 @@ header {
     white-space: nowrap;  
     z-index: 10;
     position: relative;
-    animation: slideInLeft 2s ease-out 0.4s forwards;
-    opacity: 0;
 }
 
 .hero-content p {
@@ -218,15 +220,13 @@ header {
     line-height: 1.6;
     margin-bottom: 40px;
     margin-left: 170px;
-    animation: slideInRight 2s ease-out 0.8s forwards;
-    opacity: 0;
 }
 
 .btn-group {
     display: flex;
     gap: 16px;
     opacity: 0;
-    animation: fadeInUp 0.8s ease-out 4s forwards; 
+    animation: fadeInUp 1.3s ease-out 1.3s forwards; 
 }
 
 .btn {
@@ -288,7 +288,7 @@ header {
     object-fit: cover;
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%);
     mask-image: linear-gradient(to right, transparent 0%, black 15%);
-    animation: fadeIn 1s ease-out 3s forwards;
+    animation: fadeIn 0.9s ease-out 0.9s forwards;
     opacity: 0;
 }
 
@@ -1168,6 +1168,15 @@ text-transform: none;
     gap: 24px;
 }
 
+
+.quote-contacts .social-icons a {
+    color: #ffffff;
+}
+.quote-contacts .social-icons a:hover {
+    color: #888888;
+}
+
+
 .contact-item {
     display: flex;
     align-items: flex-start;
@@ -1226,54 +1235,81 @@ text-transform: none;
 
 
 .light-footer {
-    background-color: #ffffff;
+    background-color: #050505;
     color: #333333;
-    padding: 100px 0 70px 0;
-    font-family: 'Inter', sans-serif;
+    padding: 30px 0;
 }
 
-.footer-bounded {
-    max-width: 1700px !important;
-    margin: 0 auto;
-    padding: 0 40px;
+.seamless-footer {
+    background-color: #050505;
+    color: #333333;
+    color: var(--text-white);
+    padding: 30px 0;
+    border-top: 1px solid rgba(109, 107, 107, 0.36);
 }
 
-.footer-top {
+.compact-footer-layout {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 180px;
+    align-items: center;
+    width: 100%;
+    max-width: 2000px !important; 
+    padding-left: 100px; 
 }
 
-.footer-nav {
+.compact-footer-layout .footer-brand .logo {
     display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
-
-.footer-nav a {
-    color: #000000;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
     text-decoration: none;
-    font-size: 28px;
-    font-weight: 400;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin: 0;
 }
 
-.footer-nav a:hover {
-    opacity: 0.5;
-    transform: translateX(5px);
+.compact-footer-layout .logo-img {
+    height: 47px;
+    width: auto;
+    margin-right: 12px;
 }
 
-.footer-anim-item {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-    will-change: opacity, transform;
+.compact-footer-layout .footer-bottom {
+    font-size: 14px;
+    color: #888888;
 }
 
-.footer-anim-item.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+@media (max-width: 768px) {
+    .compact-footer-layout {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    .compact-footer-layout .footer-brand .logo {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .compact-footer-layout {
+        padding-left: 40px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .compact-footer-layout {
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .compact-footer-layout {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 .footer-brand {
@@ -1400,7 +1436,11 @@ text-transform: none;
     }
 }
 
-
+#animated-contacts.show-contacts .social-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
 
 html, body {
     overflow-x: hidden !important;
