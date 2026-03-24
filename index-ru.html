@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanning 3D</title>
+    
+    <meta name="description" content="Высокоточное 3D-сканирование. Миллиметровая точность с оборудованием Leica для архитекторов, дизайнеров и мебельщиков.">
+    <meta name="keywords" content="3D сканирование, обмерные чертежи, Leica iCON, архитектура, обмер помещений">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scanning-3d.eu/"> <meta property="og:title" content="SCANNING 3D | Высокоточное 3D-сканирование">
+    <meta property="og:description" content="Високоточный замер. Цифровая модель Помещения. Создаем точную цифровую копию вашего объекта для уверенного проектирования и дизайна.">
+    <meta property="og:image" content="https://scanning-3d.eu/IMG/faviconsocial.jpg"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SCANNING 3D | Высокоточное 3D-сканирование">
+    <meta name="twitter:description" content="Високоточный замер. Цифровая модель Помещения. Создаем точную цифровую копию вашего объекта.">
+    <meta name="twitter:image" content="https://scanning-3d.eu/IMG/faviconsocial.jpg">
+
+    <link rel="icon" type="image/jpg" sizes="200x200" href="IMG/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="IMG/favicon.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c53adf1cb9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">
+            <svg class="logo-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(50, 50) scale(1.15) translate(-50, -50)">
+                    <path d="M50 20 L76 35 L76 65 L50 80" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M50 80 L50 50 L76 35" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="20" r="2.5" fill="#111111"/><circle cx="41" cy="25" r="2" fill="#111111"/><circle cx="33" cy="30" r="1.5" fill="#111111"/><circle cx="24" cy="35" r="2.5" fill="#111111"/><circle cx="24" cy="45" r="1.5" fill="#111111"/><circle cx="24" cy="55" r="2" fill="#111111"/><circle cx="24" cy="65" r="2.5" fill="#111111"/><circle cx="33" cy="70" r="1.5" fill="#111111"/><circle cx="41" cy="75" r="2" fill="#111111"/><circle cx="50" cy="80" r="2.5" fill="#111111"/><circle cx="43" cy="40" r="1.5" fill="#111111"/><circle cx="33" cy="45" r="2" fill="#111111"/><circle cx="38" cy="55" r="1" fill="#111111"/><circle cx="30" cy="52" r="1.5" fill="#111111"/><circle cx="43" cy="65" r="2" fill="#111111"/><circle cx="36" cy="35" r="1" fill="#111111"/><circle cx="47" cy="50" r="2.5" fill="#111111"/>
+                </g>
+            </svg>
+            SCANNING 3D
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#solutions">О нас</a></li>
+            <li><a href="#technology">Решения</a></li>
+            <li><a href="#3d-disto">Технология</a></li>
+            <li><a href="#projects">Проекты</a></li>
+        </ul>
+
+        <div class="header-actions">
+           <div class="lang-switcher">
+    <a href="index.html" class="lang-btn">EN</a>
+    <span class="lang-divider">/</span>
+    <a href="index-ru.html" class="lang-btn active">RU</a>
+    <span class="lang-divider">/</span>
+    <a href="index-ua.html" class="lang-btn">UA</a>
+</div>
+
+            <a href="#contact" class="btn-small">Заказать 3D-замер</a>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            
+            <div class="hero-content">
+                <h1>Высокоточный замер
+                <br>Цифровая модель<br> Помещения
+                </h1>
+                <p>Проводим 3D-сканирование помещений по всей Европе с последующим построением высокоточной цифровой модели.
+                    Наши специалисты готовы к выезду на объекты любой сложности, чтобы зафиксировать геометрию до миллиметра
+                    с помощью профессионального оборудования.</p>
+                
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">Заказать 3D-замер</a>
+                    <a href="#technology" class="btn btn-outline">Как это работает</a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <img src="IMG/scan.jpg" alt="Устройство" class="hero-image">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="process-section" id="technology">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="title-main">Миллиметровая точность.</h2>
+            <p class="subtitle-main">Создаем точную цифровую копию вашего объекта. Идеальная база для архитекторов, инженеров-конструкторов и дизайнеров, исключающая риски и ошибки ручного измерения.</p>
+        </div>
+
+        <div class="cards-grid">
+    <div class="process-card">
+        <div class="card-img-container">
+            <img src="IMG/scan-thumb.jpg" alt="3D Сканирование">
+        </div>
+        <div class="card-body">
+            <span class="card-label">Сканирование</span>
+            <h3 class="card-title">Лазерная фиксация пространства</h3>
+            <p class="card-description">Мы используем современное оборудование для 3D-сканирований и замеров помещений.</p>
+            <a href="#3d-disto" class="card-btn">Технология</a>
+        </div>
+    </div>
+
+    <div class="process-card">
+        <div class="card-img-container">
+            <img src="IMG/model-thumb.jpg" alt="3D Моделирование">
+        </div>
+        <div class="card-body">
+            <span class="card-label">Моделирование</span>
+            <h3 class="card-title">Цифровая обработка данных</h3>
+            <p class="card-description">На основе замерных данных создаються точные 2D-планы и 3D-модели, надежную базу для проектирования и дизайна исключающий ошибки.</p>
+            <a href="https://drive.google.com/file/d/1xNzk34oQStERUx-3xcH35RwsBFebBjPb/view?usp=drivesdk" class="card-btn" target="_blank">Посмотреть 3D</a>
+        </div>
+    </div>
+
+    <div class="process-card">
+        <div class="card-img-container">
+            <img src="IMG/3dmodel.jpg" alt="Результат">
+        </div>
+        <div class="card-body">
+            <span class="card-label">Документация</span>
+            <h3 class="card-title">Готовые инженерные решения</h3>
+            <p class="card-description">Вы получаете полный инженерный пакет для производства. Обмерные чертежи, детальный фотоотчёт, точные 3D-модели и файлы полностью готовые к работе.</p>
+            <a href="https://drive.google.com/drive/folders/18u69IVSZesEiMaU2SsLoDLZYsH9NkzDA" class="card-btn" target="_blank">Образцы данных</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="stats-section" id="3d-disto">
+    <div class="container">
+        
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <h2 class="title-main">Инженерная точность в цифрах</h2>
+            <p class="subtitle-main" style="margin: 0 auto;">Результаты, которые говорят сами за себя. Мы превращаем сложные данные в понятные решения.</p>
+        </div>
+
+        <div class="stats-slider-track">
+            
+            <div class="center-arrows">
+                <button class="arrow-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="arrow-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="stats-slide active">
+                <div class="stats-container">
+                    <div class="stats-image-box">
+                        <img src="IMG/icon 50.jpg" alt="Процесс лазерного сканирования">
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">1 мм</div>
+                            <div class="stat-label">Точность измерений</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">12,3 Мп</div>
+                            <div class="stat-label">Разрешение камеры</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3"</div>
+                            <div class="stat-label">Угловая точность</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">360°</div>
+                            <div class="stat-label">Горизонтальное покрытие</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-slide">
+                <div class="stats-container">
+                    <div class="stats-image-box">
+                        <img src="IMG/leica-3d-disto.jpg" alt="Leica 3D Disto">
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">1 мм</div>
+                            <div class="stat-label">Точность на 10 метрах</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50 м</div>
+                            <div class="stat-label">Рабочий диапазон</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">Wi-Fi</div>
+                            <div class="stat-label">Беспроводное управление</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8x</div>
+                            <div class="stat-label">Цифровой видоискатель</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="target-section" id="clients">
+    <div class="container">
+        
+        <div class="section-header reveal-left">
+            <h2 class="title-main">Наше решение идеально подходит, если вы:</h2>
+            <p class="subtitle-main">Мы предоставляем надежный фундамент для проектов любой сложности, от частных интерьеров до крупных архитекторных объектов.</p>
+        </div>
+
+       <div class="target-grid">
+            
+            <div class="target-card reveal-scale" style="transition-delay: 0.1s;">
+                <div class="target-bg-reveal">
+                    <img src="IMG/repair.jpeg" alt="Ремонт">
+                    <div class="bg-overlay"></div> </div>
+
+                <div class="target-content">
+                    <div class="target-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="target-title">Владельцы недвижимости и Подрядчики</h3>
+                    <p class="target-text">Точная оцифровка и обмер помещений перед началом проектирования. Формируем корректную цифровую обмерную базу, которая служит основой для дальнейшей работы. Это помогает избежать ошибок в проекте и лишних затрат при реализации.</p>
+                </div>
+            </div>
+
+            <div class="target-card reveal-scale" style="transition-delay: 0.3s;">
+                <div class="target-bg-reveal">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1974&auto=format&fit=crop" alt="Дизайн интерьера">
+                    <div class="bg-overlay"></div>
+                </div>
+
+                <div class="target-content">
+                    <div class="target-icon">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-drafting-compass-icon lucide-drafting-compass">
+                        <path d="m12.99 6.74 1.93 3.44"/><path d="M19.136 12a10 10 0 0 1-14.271 0"/>
+                        <path d="m21 21-2.16-3.84"/><path d="m3 21 8.02-14.26"/><circle cx="12" cy="5" r="2"/>
+                    </svg>
+                    </div>
+                    <h3 class="target-title">Дизайнеры Интерьера</h3>
+                    <p class="target-text">Надёжные данные для вашего дизайн-проекта. Точно фиксируем геометрию: кривизну стен, перепады высот и коммуникации. Это даёт возможность проектировать с полной уверенностью и исключает неприятные сюрпризы при реализации проекта</p>
+                </div>
+            </div>
+
+            <div class="target-card reveal-scale" style="transition-delay: 0.5s;">
+                <div class="target-bg-reveal">
+                    <img src="IMG/build-thumb.jpg" alt="Мебель на заказ">
+                    <div class="bg-overlay"></div>
+                </div>
+
+                <div class="target-content">
+                    <div class="target-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bed-double-icon lucide-bed-double">
+                            <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/>
+                            <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/>
+                        </svg>
+                    </div>
+                    <h3 class="target-title">Производители Мебели</h3>
+                    <p class="target-text">Обмерные данные для вашего производства. Фиксируем все нюансы ниши, кривизну стен и углов, Чтобы кухня и встроенная мебель встали точно с первого раза, без лишней подгонки.</p>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<section class="projects-section" id="projects">
+  <div class="container">
+    
+    <div class="section-header reveal-left">
+        <h2 class="title-main">География наших проектов</h2>
+        
+        </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal-scale" style="transition-delay: 0.1s;">
+    <video autoplay muted loop playsinline>
+        <source src="IMG/video-1.mp4" type="video/mp4">
+    </video>
+    <div class="project-overlay">
+        <h3>Румыния</h3>
+        <p>Констанца</p>
+    </div>
+</div>
+
+      <div class="project-card reveal-scale" style="transition-delay: 0.2s;">
+        <video autoplay muted loop playsinline>
+          <source src="IMG/video-2.mp4" type="video/mp4">
+        </video>
+        <div class="project-overlay">
+          <h3>Италия</h3>
+          <p>Перуджа</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal-scale" style="transition-delay: 0.3s;">
+        <video autoplay muted loop playsinline>
+          <source src="IMG/video-3.mp4" type="video/mp4">
+        </video>
+        <div class="project-overlay">
+          <h3>Болгария</h3>
+          <p>София</p>
+        </div>
+      </div>
+
+      <div class="project-card reveal-scale" style="transition-delay: 0.4s;">
+        <video autoplay muted loop playsinline>
+          <source src="IMG/video-4.mp4" type="video/mp4">
+        </video>
+        <div class="project-overlay">
+          <h3>Румыния</h3>
+          <p>Бухарест</p>
+        </div>
+      </div>
+
+    <div class="project-card reveal-scale" style="transition-delay: 0.4s;">
+        <video autoplay muted loop playsinline>
+          <source src="IMG/video-5.mp4" type="video/mp4">
+        </video>
+        <div class="project-overlay">
+          <h3>Австрия</h3>
+          <p>Вена</p>
+        </div>
+      </div>
+
+    <div class="project-card reveal-scale" style="transition-delay: 0.4s;">
+        <video autoplay muted loop playsinline>
+          <source src="IMG/video-6.mp4" type="video/mp4">
+        </video>
+        <div class="project-overlay">
+          <h3>Германия</h3>
+          <p>Берлин</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="faq-section" id="solutions">
+    <div class="container faq-container">
+        
+        <div class="faq-content">
+            <div class="faq-text-group">
+                <h2 class="faq-title">Ответы<br> на частые<br>вопросы.</h2>
+                <p class="faq-description">
+                    Получите экспертную информацию о 3D-сканировании и процессах измерения для проектирования и дизайна.
+                </p>
+            </div>
+            <a href="#contact" class="btn-blue faq-btn">Обсудить проект</a>
+        </div>
+
+        <div class="faq-list">
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Что такое 3D-сканирование ?
+                    <span class="faq-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <p>3D-сканирование — это бесконтактная технология, которая фиксирует форму физических объектов с помощью лазера. Она создает точные цифровые копии любого помещения или здания.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Насколько точны ваши измерения ?
+                    <span class="faq-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <p>Мы используем профессиональные измерительные приборы Leica, которые обеспечивают точность в пределах 1 мм. Это значительно превышает точность ручных замеров рулеткой.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Какие файлы получает клиент ?
+                    <span class="faq-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <p>Клиент получает обмерные чертежи и цифровые модели в форматах .DWG, .DXF и при необходимости .PDF, а также детальный фотоотчёт объекта.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Кто ваши основные клиенты ?
+                    <span class="faq-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <p>Мы работаем преимущественно с дизайнерами интерьера, инженерами-конструкторами и с производителями мебели, которым нужны детальные замеры и сканирование помещений.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Как быстро происходит процесс ?
+                    <span class="faq-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <p>Каждый проект уникален. Сроки подбираются индивидуально, исходя из сложности и масштаба. Мы ценим ваше время и гарантируем баланс: быстро, точно, без компромиссов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    В каких странах вы работаете ?
+                    <span class="faq-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="faq-answer-wrapper">
+                    <div class="faq-answer">
+                        <p>Мы работаем по всей Европе. Наша команда полностью мобильна и готова выехать на ваш объект в любой европейской стране со своим профессиональным оборудованием.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="quote-section" id="contact">
+    <div class="container quote-container">
+        
+        <div class="quote-form-wrapper"> <form class="quote-form" id="tg-form">
+                
+                <div class="form-group form-anim-item">
+                    <label>ИМЯ</label>
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                
+                <div class="form-group form-anim-item">
+                    <label>ТЕЛЕФОН</label>
+                    <input type="tel" name="phone" placeholder="Введите свой номер телефона" required>
+                </div>
+                
+                <div class="form-group form-anim-item">
+                    <label>ДАННЫЕ ПРОЕКТА И ТРЕБОВАНИЯ</label>
+                    <textarea name="project" rows="4" placeholder="Напишите ваше сообщение..."></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn" class="btn-blue submit-btn form-anim-item" disabled>Отправить</button>
+            </form>
+        </div>
+
+        <div class="quote-text reveal-right">
+            <h2 class="quote-title">Рассчитать проект</h2>
+        <p class="quote-description">
+            Поделитесь данными проекта для точной оценки 3D-измерения.
+            Наши менеджеры свяжутся с вами для уточнения деталей.
+        </p>
+            
+            <div class="quote-contacts" id="animated-contacts">
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/>
+                    </svg>
+                    <a href="mailto:marangozua@gmail.com">marangozua@gmail.com</a>
+                </div>
+                
+                <div class="contact-item cascade-item phone-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                        <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+                    </svg>
+                    <a href="tel:+40727982461">+40 (727) 982 461</a>
+                </div>
+                
+                <div class="contact-item cascade-item phone-2">
+                    <div style="width: 24px; height: 24px; flex-shrink: 0;"></div>
+                    <a href="tel:+380634530666">+38 (063) 453 06 66</a>
+                </div>
+            <div class="contact-item cascade-item address-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="color: #ffffff; font-weight: 500; font-size: 14px; margin-bottom: 2px;">Главный офис</span>
+                        <a href="https://maps.google.com/?q=Constanta,+Romania" target="_blank" rel="noopener noreferrer">Румыния, Констанца</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="light-footer">
+    <div class="container footer-bounded">
+
+        <div class="footer-top">
+            <div class="footer-nav">
+                <a href="#hero" class="footer-anim-item">Главная</a>
+                <a href="#projects" class="footer-anim-item">Проекты</a>
+                <a href="#3d-disto" class="footer-anim-item">Технологии</a>
+                <a href="#technology" class="footer-anim-item">Услуги</a>
+                <a href="#contact" class="footer-anim-item">Контакты</a>
+            </div>
+
+            <div class="footer-brand footer-anim-item">
+                <a href="#" class="logo">
+                <svg class="logo-img" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(50, 50) scale(1.15) translate(-50, -50)">
+                        <path d="M50 20 L76 35 L76 65 L50 80" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M50 80 L50 50 L76 35" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <circle cx="50" cy="20" r="2.5" fill="#111111"/>
+                        <circle cx="41" cy="25" r="2" fill="#111111"/>
+                        <circle cx="33" cy="30" r="1.5" fill="#111111"/>
+                        <circle cx="24" cy="35" r="2.5" fill="#111111"/>
+                        <circle cx="24" cy="45" r="1.5" fill="#111111"/>
+                        <circle cx="24" cy="55" r="2" fill="#111111"/>
+                        <circle cx="24" cy="65" r="2.5" fill="#111111"/>
+                        <circle cx="33" cy="70" r="1.5" fill="#111111"/>
+                        <circle cx="41" cy="75" r="2" fill="#111111"/>
+                        <circle cx="50" cy="80" r="2.5" fill="#111111"/>
+                        
+                        <circle cx="43" cy="40" r="1.5" fill="#111111"/>
+                        <circle cx="33" cy="45" r="2" fill="#111111"/>
+                        <circle cx="38" cy="55" r="1" fill="#111111"/>
+                        <circle cx="30" cy="52" r="1.5" fill="#111111"/>
+                        <circle cx="43" cy="65" r="2" fill="#111111"/>
+                        <circle cx="36" cy="35" r="1" fill="#111111"/>
+                        <circle cx="47" cy="50" r="2.5" fill="#111111"/>
+                    </g>
+                </svg>
+                SCANNING 3D
+            </a>
+            </div>
+        </div>
+
+<div class="footer-middle footer-anim-item">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61587670971282" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href="https://www.instagram.com/scanning_3d/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="https://wa.me/40727982461" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+                </a>                
+                <a href="https://t.me/Valenti_x" target="_blank" aria-label="Telegram">
+                <i class="fa-brands fa-telegram fa-xl"></i>
+                </a>            
+</div>
+
+            </div>
+        </div>
+
+        <div class="footer-divider footer-anim-item"></div>
+
+        <div class="footer-bottom footer-anim-item">
+            <div class="copyright"> SCANNING 3D 2026 © Все права защищены</div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
